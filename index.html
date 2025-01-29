@@ -38,41 +38,35 @@
             margin: auto;
             padding: 20px;
         }
-        .image-container {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .image-container img {
-            width: 80%;
-            max-width: 600px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        .cards {
+        .section {
             display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-        }
-        .card {
+            align-items: center;
+            justify-content: space-between;
             background: white;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             padding: 20px;
-            width: 300px;
+            margin-bottom: 20px;
             text-align: left;
-            font-family: 'Roboto', sans-serif;
         }
-        .card h3 {
+        .section img {
+            width: 40%;
+            max-width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .section-content {
+            width: 55%;
+        }
+        .section h3 {
             font-family: 'Playfair Display', serif;
             color: #004e92;
         }
-        .card p {
+        .section p {
             font-size: 1rem;
             color: #555;
         }
         ul {
-            text-align: left;
             padding-left: 20px;
         }
         ul li a {
@@ -98,54 +92,61 @@
         <p>Explora diversas formas de generar ingresos extra desde casa.</p>
     </header>
 
-    <div class="image-container">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Dollar_banknotes.jpg" alt="Dinero en efectivo">
-    </div>
-
     <main class="container">
-        <section class="cards">
-            <div class="card">
+        <section class="section">
+            <div class="section-content">
                 <h3>Trabajos Freelance</h3>
-                <p>Ser freelance te permite trabajar en proyectos sin estar atado a una empresa. Si tienes habilidades en escritura, diseño, programación o marketing, plataformas como Upwork y Fiverr te ayudarán a conseguir clientes de todo el mundo.</p>
+                <p>Trabajar como freelance te permite tener control sobre tu tiempo y elegir los proyectos en los que deseas trabajar. 
+                   Puedes ofrecer servicios de redacción, diseño gráfico, desarrollo web, traducción, entre otros. Existen muchas 
+                   plataformas que te conectan con clientes potenciales de todo el mundo.</p>
                 <ul>
                     <li><a href="https://www.upwork.com/" target="_blank">Upwork</a></li>
                     <li><a href="https://www.fiverr.com/" target="_blank">Fiverr</a></li>
                     <li><a href="https://www.freelancer.com/" target="_blank">Freelancer</a></li>
                 </ul>
             </div>
-            <div class="card">
-                <h3>Vende Productos en Línea</h3>
-                <p>Si tienes productos físicos o digitales, puedes venderlos en plataformas como MercadoLibre y Amazon. También puedes crear tu propia tienda en Shopify o Etsy si prefieres una tienda más personalizada.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/db/Online_Freelancing.jpg" alt="Freelance trabajando">
+        </section>
+
+        <section class="section">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Online_Shopping_Illustration.png" alt="Ventas en línea">
+            <div class="section-content">
+                <h3>Vender Productos en Línea</h3>
+                <p>Si tienes habilidades para crear productos artesanales o digitales, vender en línea es una excelente opción. 
+                   Plataformas como Amazon, Etsy y Shopify te permiten vender sin necesidad de una tienda física. 
+                   También puedes vender productos de terceros y obtener una comisión.</p>
                 <ul>
-                    <li><a href="https://www.mercadolibre.com/" target="_blank">MercadoLibre</a></li>
-                    <li><a href="https://www.amazon.com/" target="_blank">Amazon</a></li>
                     <li><a href="https://www.etsy.com/" target="_blank">Etsy</a></li>
                     <li><a href="https://www.shopify.com/" target="_blank">Shopify</a></li>
+                    <li><a href="https://www.amazon.com/" target="_blank">Amazon</a></li>
                 </ul>
             </div>
-            <div class="card">
-                <h3>Encuestas y Pruebas</h3>
-                <p>Algunas compañías te pagan por compartir tu opinión en encuestas o probar productos nuevos. No es un ingreso estable, pero es una manera fácil de ganar dinero extra.</p>
+        </section>
+
+        <section class="section">
+            <div class="section-content">
+                <h3>Encuestas y Pruebas de Productos</h3>
+                <p>Algunas empresas te pagan por probar productos o completar encuestas en línea. 
+                   No es una forma de hacerte rico, pero es un ingreso extra fácil de conseguir. 
+                   Algunas plataformas te permiten ganar tarjetas de regalo o dinero en efectivo.</p>
                 <ul>
                     <li><a href="https://www.swagbucks.com/" target="_blank">Swagbucks</a></li>
-                    <li><a href="https://www.pineconeresearch.com/" target="_blank">Pinecone Research</a></li>
                     <li><a href="https://www.surveyjunkie.com/" target="_blank">Survey Junkie</a></li>
                 </ul>
             </div>
-            <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Online_Survey_Illustration.png" alt="Encuestas en línea">
+        </section>
+
+        <section class="section">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Cryptocurrency_Illustration.png" alt="Criptomonedas">
+            <div class="section-content">
                 <h3>Invertir en Criptomonedas</h3>
-                <p>Las criptomonedas pueden ser una excelente forma de inversión si se hace con cuidado. Plataformas como Binance y Coinbase permiten comprar y vender criptomonedas de manera segura.</p>
+                <p>Las criptomonedas son una alternativa interesante de inversión, aunque con riesgos. 
+                   Es recomendable educarse bien antes de invertir. Plataformas como Binance y Coinbase permiten 
+                   comprar, vender y almacenar criptomonedas de manera segura.</p>
                 <ul>
                     <li><a href="https://www.binance.com/" target="_blank">Binance</a></li>
                     <li><a href="https://www.coinbase.com/" target="_blank">Coinbase</a></li>
-                </ul>
-            </div>
-            <div class="card">
-                <h3>Marketing de Afiliados</h3>
-                <p>Gana dinero promoviendo productos y ganando comisiones por cada venta generada a través de tus enlaces de afiliado. Amazon Afiliados es una opción popular.</p>
-                <ul>
-                    <li><a href="https://affiliate-program.amazon.com/" target="_blank">Amazon Afiliados</a></li>
-                    <li><a href="https://www.shareasale.com/" target="_blank">ShareASale</a></li>
                 </ul>
             </div>
         </section>
