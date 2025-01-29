@@ -38,6 +38,16 @@
             margin: auto;
             padding: 20px;
         }
+        .image-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .image-container img {
+            width: 80%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
         .cards {
             display: flex;
             flex-wrap: wrap;
@@ -87,9 +97,14 @@
         <h1>Maneras de Ganar Dinero Fácil</h1>
         <p>Explora diversas formas de generar ingresos extra desde casa.</p>
     </header>
+
+    <div class="image-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Stacks_of_money.jpg/1200px-Stacks_of_money.jpg" alt="Dinero en efectivo">
+    </div>
+
     <main class="container">
         <section class="cards">
-            " + "".join(["<div class="card">
+            <div class="card">
                 <h3>Trabajos Freelance</h3>
                 <p>Ser freelance te permite trabajar en proyectos sin estar atado a una empresa. Si tienes habilidades en escritura, diseño, programación o marketing, plataformas como Upwork y Fiverr te ayudarán a conseguir clientes de todo el mundo.</p>
                 <ul>
@@ -117,11 +132,27 @@
                     <li><a href="https://www.surveyjunkie.com/" target="_blank">Survey Junkie</a></li>
                 </ul>
             </div>
-            " for _ in range(50)]) + "
+            <div class="card">
+                <h3>Invertir en Criptomonedas</h3>
+                <p>Las criptomonedas pueden ser una excelente forma de inversión si se hace con cuidado. Plataformas como Binance y Coinbase permiten comprar y vender criptomonedas de manera segura.</p>
+                <ul>
+                    <li><a href="https://www.binance.com/" target="_blank">Binance</a></li>
+                    <li><a href="https://www.coinbase.com/" target="_blank">Coinbase</a></li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Marketing de Afiliados</h3>
+                <p>Gana dinero promoviendo productos y ganando comisiones por cada venta generada a través de tus enlaces de afiliado. Amazon Afiliados es una opción popular.</p>
+                <ul>
+                    <li><a href="https://affiliate-program.amazon.com/" target="_blank">Amazon Afiliados</a></li>
+                    <li><a href="https://www.shareasale.com/" target="_blank">ShareASale</a></li>
+                </ul>
+            </div>
         </section>
     </main>
+
     <footer>
-        <p>Hecho con ❤️ por [Blai]</p>
+        <p>Hecho con ❤️ por Blai</p>
     </footer>
 </body>
 </html>
